@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border : 1px solid violet;
+            border-collapse: collapse;
+            display : inline-block;
+        }
+        td{
+            border : 1px solid violet;
+            width : 40px;
+            height : 40px;
+            display : inline-block;
+        }
+       
+    </style>
+</head>
+<body onload = "randomBerry()">
+    <h1>마우스 클릭 연습</h1>
+    <hr>
+    <table> 
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+        <tr><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td><td><img src = "" ></td></tr>
+    </table>
+    <script>
+        let images = document.getElementsByTagName("td");
+        function randomBerry(){
+            for(let i =0;i<images.length;i++){
+                images[i].innerHTML = "";
+            }
+            let i = Math.floor(Math.random()*100);
+            images[i].innerHTML = "hello";
+            images[i].onclick = randomBerry;
+            
+        }
+    </script>
+</body>
+</html>
